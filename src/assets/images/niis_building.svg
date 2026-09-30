@@ -1,0 +1,444 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080">
+  <defs>
+    <!-- Sky Gradient -->
+    <linearGradient id="skyGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#4a7eb0" />
+      <stop offset="35%" stop-color="#6997c6" />
+      <stop offset="70%" stop-color="#9fc1df" />
+      <stop offset="100%" stop-color="#c6dcf0" />
+    </linearGradient>
+
+    <!-- Wall Sandstone Gradients -->
+    <linearGradient id="wallBase" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ebd2bb" />
+      <stop offset="50%" stop-color="#dfc0a2" />
+      <stop offset="100%" stop-color="#d6b392" />
+    </linearGradient>
+
+    <!-- Terracotta Pillar Gradient -->
+    <linearGradient id="pillarGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#672f23" />
+      <stop offset="25%" stop-color="#803d2f" />
+      <stop offset="75%" stop-color="#8c4435" />
+      <stop offset="100%" stop-color="#672f23" />
+    </linearGradient>
+
+    <!-- Center Blue Glass Reflection -->
+    <linearGradient id="blueGlass" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e4e79" />
+      <stop offset="30%" stop-color="#2d6ea4" />
+      <stop offset="60%" stop-color="#4ba2d8" />
+      <stop offset="90%" stop-color="#22649a" />
+      <stop offset="100%" stop-color="#1b4974" />
+    </linearGradient>
+
+    <!-- Sunset Glare Reflection on Right Window -->
+    <radialGradient id="sunGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffedd5" stop-opacity="1" />
+      <stop offset="30%" stop-color="#fdba74" stop-opacity="0.8" />
+      <stop offset="70%" stop-color="#f97316" stop-opacity="0.4" />
+      <stop offset="100%" stop-color="#ea580c" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Drop Shadows -->
+    <filter id="buildingShadow" x="-10%" y="0%" width="120%" height="110%">
+      <feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#1c1917" flood-opacity="0.25" />
+    </filter>
+  </defs>
+
+  <!-- Clear Sky -->
+  <rect width="1920" height="1080" fill="url(#skyGrad)" />
+
+  <!-- MAIN BUILDING GROUP -->
+  <g id="niis_building" filter="url(#buildingShadow)">
+
+    <!-- Center Rooftop Pagoda / Temple Tier -->
+    <g id="center_pagoda">
+      <!-- Pedestal / Base -->
+      <rect x="800" y="225" width="320" height="30" fill="#672f23" rx="2" />
+      <rect x="780" y="220" width="360" height="8" fill="#54251b" />
+      
+      <!-- Open Pillar Tier with 5 openings -->
+      <rect x="825" y="165" width="270" height="55" fill="#672f23" />
+      <!-- Open gaps showing sky -->
+      <rect x="840" y="175" width="30" height="40" fill="url(#skyGrad)" />
+      <rect x="895" y="175" width="30" height="40" fill="url(#skyGrad)" />
+      <rect x="945" y="175" width="30" height="40" fill="url(#skyGrad)" />
+      <rect x="995" y="175" width="30" height="40" fill="url(#skyGrad)" />
+      <rect x="1050" y="175" width="30" height="40" fill="url(#skyGrad)" />
+      
+      <!-- Middle Pagoda Eaves -->
+      <polygon points="760,165 1160,165 1130,152 790,152" fill="#7a372a" />
+      <rect x="830" y="130" width="260" height="22" fill="#5e291e" />
+
+      <!-- Top Pyramid Roof / Crest -->
+      <polygon points="960,95 825,130 1095,130" fill="#672f23" />
+      <polygon points="960,105 845,130 1075,130" fill="#7d3b2d" />
+      <!-- Triangular Arch in Gable -->
+      <polygon points="960,112 940,126 980,126" fill="#3a160f" />
+      <!-- Top Finial / Kalasha -->
+      <circle cx="960" cy="92" r="5" fill="#a8523f" />
+      <rect x="958" y="80" width="4" height="12" fill="#a8523f" />
+    </g>
+
+    <!-- Left Corner Rooftop Cupola / Chhatri -->
+    <g id="left_cupola">
+      <rect x="140" y="220" width="180" height="40" fill="#672f23" />
+      <!-- Dome / Pyramid roof -->
+      <path d="M 150,220 C 180,175 220,155 230,145 C 240,155 280,175 310,220 Z" fill="#5a271c" />
+      <path d="M 165,220 C 190,185 220,165 230,155 C 240,165 270,185 295,220 Z" fill="#733427" />
+      <!-- Needle spire -->
+      <rect x="228" y="125" width="4" height="20" fill="#cbd5e1" />
+      <circle cx="230" cy="122" r="4" fill="#cbd5e1" />
+    </g>
+
+    <!-- Right Corner Rooftop Cupola / Chhatri -->
+    <g id="right_cupola">
+      <rect x="1600" y="220" width="180" height="40" fill="#672f23" />
+      <!-- Dome / Pyramid roof -->
+      <path d="M 1610,220 C 1640,175 1680,155 1690,145 C 1700,155 1740,175 1770,220 Z" fill="#5a271c" />
+      <path d="M 1625,220 C 1650,185 1680,165 1690,155 C 1700,165 1730,185 1755,220 Z" fill="#733427" />
+      <!-- Needle spire -->
+      <rect x="1688" y="125" width="4" height="20" fill="#cbd5e1" />
+      <circle cx="1690" cy="122" r="4" fill="#cbd5e1" />
+    </g>
+
+    <!-- Roof Parapet Railing & Finials -->
+    <rect x="100" y="255" width="1720" height="32" fill="#dfc1a4" stroke="#c49e7b" stroke-width="2" />
+    <!-- Decorative dentils on parapet -->
+    <g fill="#b28864">
+      <rect x="120" y="262" width="1680" height="6" />
+      <rect x="120" y="274" width="1680" height="6" />
+    </g>
+    <!-- Array of 20 Finial Urns along parapet -->
+    <g id="finials" fill="#7a372a">
+      <!-- Finials spaced across building -->
+      <path d="M 350,255 L 350,240 C 350,236 354,232 357,232 C 360,232 364,236 364,240 L 364,255 Z" />
+      <path d="M 440,255 L 440,240 C 440,236 444,232 447,232 C 450,232 454,236 454,240 L 454,255 Z" />
+      <path d="M 530,255 L 530,240 C 530,236 534,232 537,232 C 540,232 544,236 544,240 L 544,255 Z" />
+      <path d="M 620,255 L 620,240 C 620,236 624,232 627,232 C 630,232 634,236 634,240 L 634,255 Z" />
+      <path d="M 710,255 L 710,240 C 710,236 714,232 717,232 C 720,232 724,236 724,240 L 724,255 Z" />
+      <path d="M 1200,255 L 1200,240 C 1200,236 1204,232 1207,232 C 1210,232 1214,236 1214,240 L 1214,255 Z" />
+      <path d="M 1290,255 L 1290,240 C 1290,236 1294,232 1297,232 C 1300,232 1304,236 1304,240 L 1304,255 Z" />
+      <path d="M 1380,255 L 1380,240 C 1380,236 1384,232 1387,232 C 1390,232 1394,236 1394,240 L 1394,255 Z" />
+      <path d="M 1470,255 L 1470,240 C 1470,236 1474,232 1477,232 C 1480,232 1484,236 1484,240 L 1484,255 Z" />
+      <path d="M 1560,255 L 1560,240 C 1560,236 1564,232 1567,232 C 1570,232 1574,236 1574,240 L 1574,255 Z" />
+    </g>
+
+    <!-- Main Building Body (Wall Base) -->
+    <rect x="100" y="287" width="1720" height="600" fill="url(#wallBase)" />
+
+    <!-- Terracotta Vertical Pilasters / Columns (9 Pillars dividing 8 window bays) -->
+    <!-- Bay Left 1: 150-250 -->
+    <!-- Bay Left 2: 290-390 -->
+    <!-- Bay Left 3: 430-530 -->
+    <!-- Bay Left 4: 570-670 -->
+    <!-- Center Tower: 710-1210 -->
+    <!-- Bay Right 1: 1250-1350 -->
+    <!-- Bay Right 2: 1390-1490 -->
+    <!-- Bay Right 3: 1530-1630 -->
+    <!-- Bay Right 4: 1670-1770 -->
+    <g id="pilasters" fill="url(#pillarGrad)">
+      <rect x="100" y="287" width="38" height="600" />
+      <rect x="250" y="287" width="34" height="600" />
+      <rect x="390" y="287" width="34" height="600" />
+      <rect x="530" y="287" width="34" height="600" />
+      <rect x="670" y="287" width="38" height="600" />
+      
+      <rect x="1212" y="287" width="38" height="600" />
+      <rect x="1352" y="287" width="34" height="600" />
+      <rect x="1492" y="287" width="34" height="600" />
+      <rect x="1632" y="287" width="34" height="600" />
+      <rect x="1782" y="287" width="38" height="600" />
+    </g>
+
+    <!-- Floor Separating Cornices (Terracotta horizontal bands) -->
+    <!-- Level 4 Floor Line -->
+    <rect x="100" y="415" width="1720" height="12" fill="#7a372a" />
+    <!-- Level 3 Floor Line -->
+    <rect x="100" y="555" width="1720" height="12" fill="#7a372a" />
+    <!-- Level 2 Floor Line -->
+    <rect x="100" y="695" width="1720" height="12" fill="#7a372a" />
+    <!-- Ground Line -->
+    <rect x="100" y="835" width="1720" height="14" fill="#672f23" />
+
+    <!-- WINDOWS - FLOOR 4 (Top Floor) -->
+    <!-- Bays 1 to 4 Left -->
+    <g id="windows_fl4" fill="#334155" stroke="#f8fafc" stroke-width="4">
+      <rect x="150" y="325" width="85" height="65" rx="3" fill="#cbd5e1" />
+      <rect x="295" y="325" width="85" height="65" rx="3" fill="#cbd5e1" />
+      <rect x="435" y="325" width="85" height="65" rx="3" fill="#cbd5e1" />
+      <rect x="575" y="325" width="85" height="65" rx="3" fill="#cbd5e1" />
+
+      <!-- Bays 1 to 4 Right -->
+      <rect x="1260" y="325" width="85" height="65" rx="3" fill="#e2e8f0" />
+      <rect x="1400" y="325" width="85" height="65" rx="3" fill="#e2e8f0" />
+      <rect x="1540" y="325" width="85" height="65" rx="3" fill="#e2e8f0" />
+      <rect x="1680" y="325" width="85" height="65" rx="3" fill="#e2e8f0" />
+    </g>
+
+    <!-- WINDOWS - FLOOR 3 -->
+    <g id="windows_fl3" stroke="#f8fafc" stroke-width="4">
+      <rect x="150" y="445" width="85" height="85" rx="3" fill="#475569" />
+      <rect x="295" y="445" width="85" height="85" rx="3" fill="#475569" />
+      <rect x="435" y="445" width="85" height="85" rx="3" fill="#475569" />
+      <rect x="575" y="445" width="85" height="85" rx="3" fill="#475569" />
+
+      <rect x="1260" y="445" width="85" height="85" rx="3" fill="#cbd5e1" />
+      <rect x="1400" y="445" width="85" height="85" rx="3" fill="#cbd5e1" />
+      <rect x="1540" y="445" width="85" height="85" rx="3" fill="#cbd5e1" />
+      <rect x="1680" y="445" width="85" height="85" rx="3" fill="#cbd5e1" />
+    </g>
+
+    <!-- WINDOWS - FLOOR 2 (With characteristic terracotta recessed frames) -->
+    <g id="windows_fl2" stroke="#f8fafc" stroke-width="4">
+      <!-- Left -->
+      <rect x="150" y="585" width="85" height="85" rx="3" fill="#334155" />
+      <rect x="295" y="585" width="85" height="85" rx="3" fill="#334155" />
+      <rect x="435" y="585" width="85" height="85" rx="3" fill="#334155" />
+      <rect x="575" y="585" width="85" height="85" rx="3" fill="#334155" />
+
+      <!-- Right - Includes setting sun reflection burst on the right center window! -->
+      <rect x="1260" y="585" width="85" height="85" rx="3" fill="#64748b" />
+      <rect x="1400" y="585" width="85" height="85" rx="3" fill="url(#sunGlow)" />
+      <rect x="1540" y="585" width="85" height="85" rx="3" fill="#475569" />
+      <rect x="1680" y="585" width="85" height="85" rx="3" fill="#475569" />
+    </g>
+
+    <!-- WINDOWS - FLOOR 1 (Ground Floor) -->
+    <g id="windows_fl1" stroke="#f8fafc" stroke-width="4">
+      <rect x="150" y="725" width="85" height="85" rx="3" fill="#1e293b" />
+      <rect x="295" y="725" width="85" height="85" rx="3" fill="#1e293b" />
+      <rect x="435" y="725" width="85" height="85" rx="3" fill="#1e293b" />
+      <rect x="575" y="725" width="85" height="85" rx="3" fill="#1e293b" />
+
+      <rect x="1260" y="725" width="85" height="85" rx="3" fill="#334155" />
+      <rect x="1400" y="725" width="85" height="85" rx="3" fill="#334155" />
+      <rect x="1540" y="725" width="85" height="85" rx="3" fill="#334155" />
+      <rect x="1680" y="725" width="85" height="85" rx="3" fill="#334155" />
+    </g>
+
+    <!-- CENTER PAVILION TOWER (NIIS Main Entrance Tower) -->
+    <g id="center_tower">
+      <!-- Tower Sandstone Background -->
+      <rect x="710" y="270" width="500" height="617" fill="url(#wallBase)" stroke="#c49e7b" stroke-width="3" />
+
+      <!-- Left Quoin Stone Blocks (Alternating Cream and Terracotta) -->
+      <g id="left_quoins">
+        <rect x="710" y="280" width="55" height="24" fill="#dfc0a2" />
+        <rect x="710" y="310" width="40" height="24" fill="#7a372a" />
+        <rect x="710" y="340" width="55" height="24" fill="#dfc0a2" />
+        <rect x="710" y="370" width="40" height="24" fill="#7a372a" />
+        <rect x="710" y="400" width="55" height="24" fill="#dfc0a2" />
+        <rect x="710" y="430" width="40" height="24" fill="#7a372a" />
+        <rect x="710" y="460" width="55" height="24" fill="#dfc0a2" />
+        <rect x="710" y="490" width="40" height="24" fill="#7a372a" />
+        <rect x="710" y="520" width="55" height="24" fill="#dfc0a2" />
+        <rect x="710" y="550" width="40" height="24" fill="#7a372a" />
+        <rect x="710" y="580" width="55" height="24" fill="#dfc0a2" />
+        <rect x="710" y="610" width="40" height="24" fill="#7a372a" />
+        <rect x="710" y="640" width="55" height="24" fill="#dfc0a2" />
+      </g>
+
+      <!-- Right Quoin Stone Blocks -->
+      <g id="right_quoins">
+        <rect x="1155" y="280" width="55" height="24" fill="#dfc0a2" />
+        <rect x="1170" y="310" width="40" height="24" fill="#7a372a" />
+        <rect x="1155" y="340" width="55" height="24" fill="#dfc0a2" />
+        <rect x="1170" y="370" width="40" height="24" fill="#7a372a" />
+        <rect x="1155" y="400" width="55" height="24" fill="#dfc0a2" />
+        <rect x="1170" y="430" width="40" height="24" fill="#7a372a" />
+        <rect x="1155" y="460" width="55" height="24" fill="#dfc0a2" />
+        <rect x="1170" y="490" width="40" height="24" fill="#7a372a" />
+        <rect x="1155" y="520" width="55" height="24" fill="#dfc0a2" />
+        <rect x="1170" y="550" width="40" height="24" fill="#7a372a" />
+        <rect x="1155" y="580" width="55" height="24" fill="#dfc0a2" />
+        <rect x="1170" y="610" width="40" height="24" fill="#7a372a" />
+        <rect x="1155" y="640" width="55" height="24" fill="#dfc0a2" />
+      </g>
+
+      <!-- GIANT 3-STORY VERTICAL BLUE GLASS ATRIUM (Iconic feature of NIIS!) -->
+      <g id="blue_glass_curtain">
+        <rect x="835" y="415" width="250" height="250" fill="url(#blueGlass)" rx="4" stroke="#1e3a5f" stroke-width="4" />
+        
+        <!-- Glass Mullion Grid (4 columns, 6 rows of glass panels) -->
+        <!-- Vertical Grid Lines -->
+        <line x1="897" y1="415" x2="897" y2="665" stroke="#ffffff" stroke-width="3" opacity="0.65" />
+        <line x1="960" y1="415" x2="960" y2="665" stroke="#ffffff" stroke-width="3" opacity="0.65" />
+        <line x1="1022" y1="415" x2="1022" y2="665" stroke="#ffffff" stroke-width="3" opacity="0.65" />
+
+        <!-- Horizontal Grid Lines -->
+        <line x1="835" y1="456" x2="1085" y2="456" stroke="#ffffff" stroke-width="2.5" opacity="0.6" />
+        <line x1="835" y1="498" x2="1085" y2="498" stroke="#ffffff" stroke-width="2.5" opacity="0.6" />
+        <line x1="835" y1="540" x2="1085" y2="540" stroke="#ffffff" stroke-width="2.5" opacity="0.6" />
+        <line x1="835" y1="582" x2="1085" y2="582" stroke="#ffffff" stroke-width="2.5" opacity="0.6" />
+        <line x1="835" y1="624" x2="1085" y2="624" stroke="#ffffff" stroke-width="2.5" opacity="0.6" />
+
+        <!-- Sky Light Reflections across the Glass -->
+        <polygon points="840,420 980,420 890,660 840,660" fill="#ffffff" opacity="0.22" />
+        <polygon points="985,420 1080,420 1020,660 925,660" fill="#ffffff" opacity="0.18" />
+      </g>
+
+      <!-- Center Arched Entrance Portico at Base -->
+      <g id="entrance_portico">
+        <path d="M 740,887 L 740,730 Q 960,670 1180,730 L 1180,887 Z" fill="#b0644b" />
+        <path d="M 755,887 L 755,745 Q 960,695 1165,745 L 1165,887 Z" fill="#934934" />
+        
+        <!-- Embossed Gold / Bronze Letters: NIIS GROUP OF INSTITUTIONS -->
+        <rect x="780" y="745" width="360" height="42" rx="4" fill="#672f23" opacity="0.9" />
+        <text x="960" y="773" font-family="Arial, sans-serif" font-size="18" font-weight="900" fill="#fde047" text-anchor="middle" letter-spacing="3">NIIS GROUP OF INSTITUTIONS</text>
+
+        <!-- Main Arched Double Doors -->
+        <path d="M 880,887 L 880,810 Q 960,780 1040,810 L 1040,887 Z" fill="#1e293b" />
+        <line x1="960" y1="785" x2="960" y2="887" stroke="#94a3b8" stroke-width="3" />
+      </g>
+    </g>
+  </g>
+
+  <!-- FOREGROUND LANDSCAPING, TREES & FOLIAGE -->
+  <!-- Left Dense Forest / Trees Flanking Building -->
+  <g id="left_trees">
+    <circle cx="20" cy="850" r="220" fill="#0f2617" />
+    <circle cx="90" cy="790" r="170" fill="#143922" />
+    <circle cx="40" cy="700" r="140" fill="#1e4e2f" />
+    <circle cx="160" cy="840" r="130" fill="#295c39" />
+    <circle cx="80" cy="880" r="180" fill="#0a1c10" />
+  </g>
+
+  <!-- Right Dense Forest / Trees Flanking Building -->
+  <g id="right_trees">
+    <circle cx="1900" cy="850" r="220" fill="#0f2617" />
+    <circle cx="1830" cy="790" r="170" fill="#143922" />
+    <circle cx="1880" cy="700" r="140" fill="#1e4e2f" />
+    <circle cx="1760" cy="840" r="130" fill="#295c39" />
+    <circle cx="1840" cy="880" r="180" fill="#0a1c10" />
+  </g>
+
+  <!-- Center Tropical Palm Trees (Right of Center - matches exact photo!) -->
+  <g id="queen_palm">
+    <!-- Tall Curved Trunk -->
+    <path d="M 1240,950 Q 1235,750 1220,530 Q 1225,750 1250,950 Z" fill="#5c4d3c" />
+    <!-- Trunk rings -->
+    <line x1="1230" y1="880" x2="1245" y2="880" stroke="#786650" stroke-width="3" />
+    <line x1="1226" y1="810" x2="1240" y2="810" stroke="#786650" stroke-width="3" />
+    <line x1="1222" y1="740" x2="1235" y2="740" stroke="#786650" stroke-width="3" />
+    <line x1="1218" y1="670" x2="1230" y2="670" stroke="#786650" stroke-width="3" />
+
+    <!-- Palm Fronds Canopy reaching 3rd floor -->
+    <!-- Fronds arching left -->
+    <path d="M 1220,530 Q 1160,510 1100,535 Q 1150,550 1220,530" fill="#2e7d32" />
+    <path d="M 1220,530 Q 1140,540 1070,600 Q 1130,590 1220,530" fill="#1b5e20" />
+    <path d="M 1220,530 Q 1120,480 1050,470 Q 1120,510 1220,530" fill="#388e3c" />
+    <!-- Fronds arching right -->
+    <path d="M 1220,530 Q 1280,500 1350,530 Q 1290,545 1220,530" fill="#2e7d32" />
+    <path d="M 1220,530 Q 1300,530 1370,590 Q 1300,580 1220,530" fill="#1b5e20" />
+    <path d="M 1220,530 Q 1290,470 1350,460 Q 1280,500 1220,530" fill="#4caf50" />
+    <!-- Fronds arching top -->
+    <path d="M 1220,530 Q 1210,450 1225,410 Q 1235,460 1220,530" fill="#2e7d32" />
+    <path d="M 1220,530 Q 1240,450 1265,420 Q 1250,470 1220,530" fill="#388e3c" />
+  </g>
+
+  <!-- Fan Palms & Center Bushes in front of Portico -->
+  <g id="center_bushes">
+    <circle cx="680" cy="850" r="90" fill="#1b5e20" />
+    <circle cx="760" cy="830" r="110" fill="#2e7d32" />
+    <circle cx="850" cy="840" r="95" fill="#388e3c" />
+    <circle cx="960" cy="830" r="120" fill="#1b5e20" />
+    <circle cx="1060" cy="840" r="105" fill="#2e7d32" />
+    <circle cx="1140" cy="830" r="100" fill="#1e4620" />
+    <circle cx="1220" cy="850" r="110" fill="#2e7d32" />
+    <circle cx="1320" cy="840" r="95" fill="#1b5e20" />
+  </g>
+
+  <!-- Large Rounded Shrub Hedge (Dark Green Midground) -->
+  <g id="hedge_row" fill="#143e1d">
+    <ellipse cx="1150" cy="910" rx="140" ry="110" />
+    <ellipse cx="1300" cy="920" rx="150" ry="120" />
+    <ellipse cx="1450" cy="930" rx="160" ry="120" />
+    <ellipse cx="1600" cy="940" rx="170" ry="130" />
+  </g>
+
+  <!-- WHITE/SILVER DECORATIVE ARMORED TRELLIS FENCE IN FOREGROUND -->
+  <g id="decorative_fence" stroke="#cbd5e1" stroke-width="4" fill="none">
+    <!-- Base Horizontal Railings -->
+    <line x1="200" y1="960" x2="1720" y2="960" stroke="#94a3b8" stroke-width="5" />
+    <line x1="200" y1="920" x2="1720" y2="920" stroke="#94a3b8" stroke-width="5" />
+
+    <!-- Arched Loop Fence Elements across width -->
+    <!-- Bay Left 1 -->
+    <path d="M 240,960 L 240,880 Q 300,830 360,880 L 360,960" />
+    <line x1="240" y1="880" x2="360" y2="880" />
+    <line x1="240" y1="880" x2="360" y2="960" />
+    <line x1="360" y1="880" x2="240" y2="960" />
+
+    <!-- Bay Left 2 -->
+    <path d="M 400,960 L 400,880 Q 460,830 520,880 L 520,960" />
+    <line x1="400" y1="880" x2="520" y2="880" />
+    <line x1="400" y1="880" x2="520" y2="960" />
+    <line x1="520" y1="880" x2="400" y2="960" />
+
+    <!-- Bay Left 3 -->
+    <path d="M 560,960 L 560,880 Q 620,830 680,880 L 680,960" />
+    <line x1="560" y1="880" x2="680" y2="880" />
+    <line x1="560" y1="880" x2="680" y2="960" />
+    <line x1="680" y1="880" x2="560" y2="960" />
+
+    <!-- Bay Center -->
+    <path d="M 720,960 L 720,880 Q 840,830 960,880 L 960,960" />
+    <path d="M 960,960 L 960,880 Q 1080,830 1200,880 L 1200,960" />
+
+    <!-- Bay Right 1 -->
+    <path d="M 1240,960 L 1240,880 Q 1300,830 1360,880 L 1360,960" />
+    <line x1="1240" y1="880" x2="1360" y2="880" />
+    <line x1="1240" y1="880" x2="1360" y2="960" />
+    <line x1="1360" y1="880" x2="1240" y2="960" />
+
+    <!-- Bay Right 2 -->
+    <path d="M 1400,960 L 1400,880 Q 1460,830 1520,880 L 1520,960" />
+    <line x1="1400" y1="880" x2="1520" y2="880" />
+    <line x1="1400" y1="880" x2="1520" y2="960" />
+    <line x1="1520" y1="880" x2="1400" y2="960" />
+
+    <!-- Bay Right 3 -->
+    <path d="M 1560,960 L 1560,880 Q 1620,830 1680,880 L 1680,960" />
+    <line x1="1560" y1="880" x2="1680" y2="880" />
+  </g>
+
+  <!-- CAMPUS BULLETIN NOTICE BOARD & STONE BENCH (Center Foreground - matches photo!) -->
+  <g id="campus_foreground_elements">
+    <!-- Notice Board Stand -->
+    <rect x="780" y="878" width="205" height="110" fill="#cbd5e1" stroke="#64748b" stroke-width="3" rx="2" />
+    <!-- Color sections of board: Red, Cyan, Blue -->
+    <rect x="786" y="902" width="60" height="80" fill="#dc2626" />
+    <rect x="850" y="902" width="64" height="80" fill="#0284c7" />
+    <rect x="918" y="902" width="62" height="80" fill="#2563eb" />
+    <rect x="786" y="884" width="194" height="14" fill="#f8fafc" />
+    <text x="883" y="895" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#0f172a" text-anchor="middle">NIIS CAMPUS NOTICE</text>
+
+    <!-- Stone Garden Bench Left -->
+    <g id="bench_left" fill="#94a3b8">
+      <!-- Slats -->
+      <rect x="220" y="938" width="180" height="12" rx="2" fill="#cbd5e1" stroke="#64748b" stroke-width="1.5" />
+      <rect x="220" y="955" width="180" height="12" rx="2" fill="#cbd5e1" stroke="#64748b" stroke-width="1.5" />
+      <rect x="220" y="972" width="180" height="14" rx="2" fill="#94a3b8" stroke="#475569" stroke-width="1.5" />
+      <!-- Legs -->
+      <rect x="235" y="986" width="16" height="50" fill="#475569" />
+      <rect x="365" y="986" width="16" height="50" fill="#475569" />
+    </g>
+
+    <!-- Stone Garden Bench Center -->
+    <g id="bench_center" fill="#94a3b8">
+      <!-- Slats -->
+      <rect x="550" y="948" width="180" height="12" rx="2" fill="#cbd5e1" stroke="#64748b" stroke-width="1.5" />
+      <rect x="550" y="965" width="180" height="12" rx="2" fill="#cbd5e1" stroke="#64748b" stroke-width="1.5" />
+      <rect x="550" y="982" width="180" height="14" rx="2" fill="#94a3b8" stroke="#475569" stroke-width="1.5" />
+      <!-- Legs -->
+      <rect x="565" y="996" width="16" height="40" fill="#475569" />
+      <rect x="695" y="996" width="16" height="40" fill="#475569" />
+    </g>
+  </g>
+
+  <!-- Paved Foreground Walkway at very bottom -->
+  <rect x="0" y="1030" width="1920" height="50" fill="#475569" />
+  <rect x="0" y="1030" width="1920" height="6" fill="#64748b" />
+</svg>

@@ -1,0 +1,6 @@
+{
+  "name": "CampusNav AI",
+  "description": "Smart campus navigation, interactive floor maps, Dijkstra route finding, and AI assistant for NIIS Group of Institutions.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
